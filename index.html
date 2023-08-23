@@ -1,0 +1,437 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Read'n'Learn</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head> 
+  
+  <style>
+    .animate {
+      position: absolute;
+      width: 300px; /* Adjust the width to match the container */
+      top: 50%;
+      transform: translateY(-62%);
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    .animate.active {
+      opacity: 1;
+    }
+  </style>
+  <body>
+
+    <div id="section1" class="slide current">
+        <div class="content">
+            <img src="assets/rainbow.jpg"/>
+            <h1>Despre ce nu vorbim la Read'n'Learn</h1>
+        </div>
+    </div>
+
+    <div id="section2" class="slide">
+        <a href="https://www.youtube.com/@wrinkletheduck/videos" class="sm-cta" target="_blank" style="margin-right:70px;">
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="50px" height="50px"><linearGradient id="PgB_UHa29h0TpFV_moJI9a" x1="9.816" x2="41.246" y1="9.871" y2="41.301" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f44f5a"/><stop offset=".443" stop-color="#ee3d4a"/><stop offset="1" stop-color="#e52030"/></linearGradient><path fill="url(#PgB_UHa29h0TpFV_moJI9a)" d="M45.012,34.56c-0.439,2.24-2.304,3.947-4.608,4.267C36.783,39.36,30.748,40,23.945,40	c-6.693,0-12.728-0.64-16.459-1.173c-2.304-0.32-4.17-2.027-4.608-4.267C2.439,32.107,2,28.48,2,24s0.439-8.107,0.878-10.56	c0.439-2.24,2.304-3.947,4.608-4.267C11.107,8.64,17.142,8,23.945,8s12.728,0.64,16.459,1.173c2.304,0.32,4.17,2.027,4.608,4.267	C45.451,15.893,46,19.52,46,24C45.89,28.48,45.451,32.107,45.012,34.56z"/><path d="M32.352,22.44l-11.436-7.624c-0.577-0.385-1.314-0.421-1.925-0.093C18.38,15.05,18,15.683,18,16.376	v15.248c0,0.693,0.38,1.327,0.991,1.654c0.278,0.149,0.581,0.222,0.884,0.222c0.364,0,0.726-0.106,1.04-0.315l11.436-7.624	c0.523-0.349,0.835-0.932,0.835-1.56C33.187,23.372,32.874,22.789,32.352,22.44z" opacity=".05"/><path d="M20.681,15.237l10.79,7.194c0.689,0.495,1.153,0.938,1.153,1.513c0,0.575-0.224,0.976-0.715,1.334	c-0.371,0.27-11.045,7.364-11.045,7.364c-0.901,0.604-2.364,0.476-2.364-1.499V16.744C18.5,14.739,20.084,14.839,20.681,15.237z" opacity=".07"/><path fill="#fff" d="M19,31.568V16.433c0-0.743,0.828-1.187,1.447-0.774l11.352,7.568c0.553,0.368,0.553,1.18,0,1.549	l-11.352,7.568C19.828,32.755,19,32.312,19,31.568z"/></svg>
+        </a>
+
+        <!-- <svg fill="#000000" style="position:absolute; right:80px; top:60px;" height="60px" width="92px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 302.82 302.82" xml:space="preserve" transform="matrix(1, 0, 0, -1, 0, 0)rotate(0)" stroke="#000000" stroke-width="0.00302816"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.6337919999999997"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_6_" d="M298.423,152.996c-5.857-5.858-15.354-5.858-21.213,0l-35.137,35.136 c-5.871-59.78-50.15-111.403-112.001-123.706c-45.526-9.055-92.479,5.005-125.596,37.612c-5.903,5.813-5.977,15.31-0.165,21.213 c5.813,5.903,15.31,5.977,21.212,0.164c26.029-25.628,62.923-36.679,98.695-29.565c48.865,9.72,83.772,50.677,88.07,97.978 l-38.835-38.835c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l62.485,62.485 c2.929,2.929,6.768,4.393,10.606,4.393s7.678-1.464,10.607-4.393l62.483-62.482C304.281,168.352,304.281,158.854,298.423,152.996z"></path> </g></svg> -->
+        <a href="https://www.instagram.com/seducktive/" class="sm-cta" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="50px" height="50px"><radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"/><stop offset=".328" stop-color="#ff543f"/><stop offset=".348" stop-color="#fc5245"/><stop offset=".504" stop-color="#e64771"/><stop offset=".643" stop-color="#d53e91"/><stop offset=".761" stop-color="#cc39a4"/><stop offset=".841" stop-color="#c837ab"/></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"/><radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"/><stop offset=".999" stop-color="#4168c9" stop-opacity="0"/></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"/><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"/><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"/><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"/></svg>
+        </a>
+        
+        <div class="content">
+            <h1>SeDucktive - Wrinkle, the Duck</h1>
+            <br>
+            <div class="img-container" style="height: 306px;">
+                <img class="animate active" src="assets/wrinkle-pres.PNG" alt="duckie-duck" width="300" style="border-radius: 50%;"/>
+                <img class="animate" src="assets/human-name.PNG" alt="human" width="400" style="border-radius: 3%;"/>
+                <img class="animate" src="assets/las-vegas.PNG" alt="duckie-duck" width="450" style="border-radius: 6%;"/>
+                <img class="animate" src="assets/ice-skating.jpg" alt="duckie-duck" width="450" style="border-radius: 6%;"/>
+                <img class="animate" src="assets/poland.jpg" alt="duckie-duck" width="450" style="border-radius: 6%;"/>
+                <img class="animate" src="assets/duck-art.jpg" alt="duckie-duck" width="450" style="border-radius: 6%;"/>
+                <img class="animate" src="assets/hollywood.jpg" alt="duckie-duck" width="450" style="border-radius: 6%;"/>
+                <img class="animate" src="assets/marathon.jpg" alt="duckie-duck" width="450" style="border-radius: 6%;"/>
+                <img class="animate" src="assets/emotional-support.jpg" alt="duckie-duck" width="450" style="border-radius: 6%;"/>
+            </div>
+            <div class="description1">
+                <p>A Professional Duck</p>
+                    |
+                <p>The Marathon Duck</p>
+                    |
+                <p>That Duck in Boots</p>
+            </div>
+
+            <div class="description2">
+                <p>Biologically a male</p>
+                    |
+                <p>She/her</p>
+            </div>
+                
+        </div>
+    </div>
+
+    <div id="section3" class="slide">
+        <div class="content">
+            <h1>But the most important thing is...</h1>
+            <br>
+            <iframe width="944" height="531" src="https://www.youtube.com/embed/qk0mclM9zrw" title="I took my duck to Crocs 🐊🦆" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- <img class="move" src="wrinkle-crocs.jpg" alt="duckie-duck" width="650" style="border-radius: 1%;"/> -->
+        </div>
+    </div>
+
+    <div id="section4" class="slide current">
+        <div class="content">
+            <img src="assets/rainbow.jpg"/>
+            <h1>Despre ce vorbim la Read'n'Learn</h1>
+        </div>
+    </div>
+
+    <div id="section5" class="slide">
+        <div class="content">
+            <h1>George Hotz, hacking culture and freedom</h1>
+            <h4>*geohot / tomcr00se pentru prieteni*</h4>
+            <img src="assets/geohot.jpg" alt="geo-hot" width="500px" style="border-radius: 2rem;"/>
+        </div>
+    </div>
+
+    <div id="section6" class="slide">
+        <div class="content">
+            <h1>De ce George Hotz?</h1>
+            <br>
+            <img src="assets/geohotz.jpg" alt="geo-hotz" width="500px" style="border-radius: 2rem;"/>
+            <div style="width: 40%; margin: 0 auto;">
+                <p>• este un personaj captivant în ceea ce privește valorile și acțiunile sale în societate. 
+                <p>• a fost în centrul atenției datorită implicării sale în hacking și în lupta pentru libertatea de a modifica dispozitive și software-uri.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section7" class="slide">
+        <div class="content">
+            <h1>Cine este George Hotz?</h1>
+            <br>
+            <div style="display:flex; justify-content: center; align-items: center; gap:50px;">
+                <img src="assets/george-hotz-young.jpeg" alt="geo-hotz-young" style="width: 400px; height: 270px; border-radius: 2rem;"/>
+                <div style="width: 40%;">
+                    <p>• s-a născut în 1989 în New Jersey
+                    <p>• nu a excelat în primii ani de școală, în principiu din cauză că o considera plictisitoare până și-a descoperit pasiunea pentru calculatoare</p>
+                    <p>• devine o figură reprezentativă pentru cultura hacking-ului </p>
+                    <p>• conduce 2 business-uri, unul cu care îi face concurență lui Elon Musk (OpenPilot) și un altul care susține democratizarea AI-ului</p>
+                    <p>• software engineer de succes - makes long programming streams (8h+) to share knowledge</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="section7" class="slide">
+        <div class="content">
+            <div style="display:flex; align-items: center; justify-content: center; gap:50px;">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/41blaoqElTldKdFKxKYK2O?utm_source=generator" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <div>
+                    <h1>Software engineer and...artist(?)</h1>
+                    <p>“Yo, Yo <br>
+                        In studio <br>
+                        Much track<br>
+                        Very rap<br>
+                        So, yeah<br>
+                        […]<br>
+                        I was bottom five in my class<br>
+                        An a***le who barely passed<br>
+                        Whole time spent playing Super Smash<br>
+                        In the senior lounge”<br>
+                        […]<br>
+                        What'd you do with your time?<br>
+                        Figured it out in my Aunt's basement<br>
+                        Video games and no damn patience<br>
+                        Tech skills and determination<br>
+                        Crossed with the rage and frustration<br>
+                        And I got smarter<br>
+                        And I grew quicker<br>
+                        And I felt sharper<br>
+                        As I blew bigger”<br>
+                        <br>
+                        <i>It was called the cold war because Russia is cold – George Hotz (tomcr00se)</i><br>
+                        </p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div id="section8" class="slide">
+        <div class="content">
+            <h1>So..what is a hacker?</h1>
+            <div style="display:flex; justify-content: center; align-items: center; gap:50px;">
+                <img src="assets/hacker.PNG" alt="hacker" style="height:350px; height:260px; border-radius:2rem;"/>
+                <div style="width: 50%;">
+                    <p>• termenul a căpătat o semnificație negativă din cauza mass media care l-a folosit pentru a descrie infractorii cibernetici care se ocupă cu ilegalități de tipul:
+                        <br>
+                        - a fura bani din conturi bancare<br>
+                        - a invada spațiul virtual privat al cetățenilor de rând<br>
+                        - <a href="https://www.libertatea.ro/stiri/au-vandut-si-prefectura-236669" target="_blank">sau a vinde primăria pe eBay</a></p>
+                    <p>• diferența fundamentală între hackeri și infractorii cibernetici este aceea că hackerii construiesc, iar ceilalți distrug</p>
+                        <p>- cultura hacking-ului are o istorie îndelungată și a apărut încă din vremea ARPAnet</p>
+                        <p>- ARPAnet (predecesorul internetului - una din cele mai timpurii rețele) care a oferit o platformă prin intermediul căreia oamenii de știiță și cercetătorii să împartă cunoștințe și să colaboreze pentru eventuale descoperiri</p>
+                        <p>- ARPAnet practic a oferit un mediu fertil care să se cultive anumite valori care au fost transmise mai departe</p>
+                    <p>• <a href="http://www.catb.org/~esr/faqs/hacker-howto.html#attitude" target="_blank">Manualul Hackerului de Succes</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="section9" class="slide">
+        <div class="content">
+            <h1>What does free even mean?</h1>
+            <div style="display:flex; justify-content: center; align-items: center; gap:50px;">
+                <img src="assets/free-as-in-beer.jpg" alt="free" style="height:350px; height:260px; border-radius:2rem;"/>
+                <div style="width: 50%;">
+                    <p>• two types of *free*</p>
+                    <p> - free as in beer -> gratis, moca, 0 valoare pecuniară</p>
+                    <p> - free as in speech -> liber să fie folosit după bunul plac</p>
+                    <p><i>“Free software” means software that respects users' freedom and community. Roughly, it means that the users have the freedom to run, copy, distribute, study, change and improve the software. Thus, “free software” is a matter of liberty, not price. 
+                        <br><br>To understand the concept, you should think of “free” as in “free speech,” not as in “free beer.” We sometimes call it “libre software,” borrowing the French or Spanish word for “free” as in freedom, to show we do not mean the software is gratis.</i></p>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="section10" class="slide">
+        <div class="content">
+            <h1>Situația 1</h1>
+            <div style="display:flex; justify-content: center; align-items: center; gap:50px;">
+                <img src="assets/tomatoes.jpg" alt="tomatoes" style="height:350px; height:260px; border-radius:2rem;"/>
+                <div style="width: 50%;">
+                    <p>Marian merge la piață să cumpere câteva kg de roșii. Îi dă 25 lei unui vânzător, iar pe urmă el poate folosi roșiile să facă pastă de tomate sau să arunce cu ele în BMW-ul lui Vali, vecinul lui. Nu știm nimic despre calitățile lui morale, deci orice e posibil. 🙃
+                        <br><br>Bottom line is: Marian este proprietarul roșiilor și face ce vrea cu ele
+                    </p>
+                </div>
+            </div>
+            <h1>Situația 2</h1>
+            <div style="display:flex; justify-content: center; align-items: center; gap:50px;">
+                <div style="width: 50%;">
+                    <p>Vali a mers ieri la un târg de mașini să-și cumpere un BMW. El primește un BMW cu anumite dotări la un anumit preț. I se mai spune și că, dacă își dorește, pentru un preț modic de 18$ pe lună, poate avea și scaune încălzite ulterior pentru că tehnologia exista pe mașină, dar nu e activată din software. Vali pleacă acasă ca proprietar de BMW care are toate componentele necesare pentru niște scaune încălzite, dar nu are acces la ele. 
+                        <br><br>Putem considera că Vali este cu adevărat proprietarul mașinii având în vedere că fostul proprietar (BMW) încă are drepturi asupra fostului său bun?
+                        <br><br>Și dacă e proprietarul mașinii, ar putea Vali dacă ar avea cunoștițele necesare, să se folosească de scaunele încălzite fără să plătească?
+                    </p>    
+                </div>
+                <img src="assets/bmw.jpg" alt="bmw" style="height:350px; height:260px; border-radius:2rem;"/>
+            </div>
+        </div>
+    </div>
+
+    <div id="section11" class="slide">
+        <div class="content">
+            <h1>Situația 3</h1>
+            <p style="width: 70%;">George trăiește în 2007 și vrea să își cumpere un iPhone. E primul model lansat și pentru că hype-ul era deja foarte mare, Apple îl lansează în parteneriat cu A.T. & T., 
+                o firmă de servicii de telecomunicații. Deci telefoanele erau limitate să funcționeze exclusiv cu cartele de la A.T. & T. George își dorea foarte mult un iPhone, 
+                însă el era deja abonat T-Mobile și nu voia să renunțe la abonamentul lui. În final, își cumpără un iPhone și pentru că el îl consideră bunul lui cu drepturi depline, 
+                decide să modifice componentele hardware și software încât să funcționeze și cu cartela lui.
+            </p>
+            <div style="display:flex; justify-content: center; align-items: center; gap:50px;">
+                <div style="width:40%;">
+                    <p>• media loved the story, iar Hotz se bucură de super multă atenție din partea publicului</p>
+                    <p>• organizează o licitație pentru primul iPhone unlocked și reușește să-l vândă pe un modic Nissan 350Z (2007) + încă alte 3 iPhones</p>
+                    <p>• primește un email cu felicitări de la Steve Wozniak (co-founder Apple)</p>
+                </div>
+                <iframe width="420" height="312" src="https://www.youtube.com/embed/tvJ1RGlxe8Q" title="Unlocked iPhone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            </div> 
+        </div>
+    </div>
+
+    <div id="section12" class="slide">
+        <div class="content">
+            <h1>Situația 4</h1>
+            <div style="width:60%;">
+                <p>• 3 generations of hacked iPhones later, he receives a new challenge. La finalul anului 2010 primește un PS3.</p>
+                <p>• aflase că PS3-ul folosea o tehnologie nouă de procesoare care se preta foarte bine la calcule științifice, dar nu putea fi accesată din cauza softului.</p>
+                <p>• practic, putea folosi device-ul său doar limitat la ce îi permite Sony să facă. Ex: ne imaginăm că mereu când pornim PC-ul s-ar deschide doar Chrome fără să avem acces la Windows</p>
+                <p>• după ceva timp de lucru, reușește să obțină acces la sistemul de operare de bază, ceea ce îi permitea să facă orice cu PS3-ul, 
+                    "from piracy to obscure Japanese software”. 
+                </p>
+                <p><i>• With this concern in mind, Hotz wrote code that disabled the ability to run pirated software using his hack and added a note 
+                    in his documentation: “I don’t condone piracy.” Still, he wanted a second opinion. Before he put the site live, he signed 
+                    into an online chat channel where hacker friends hung out, and asked them whether he should release his hack. 
+                    “Yeah,” one told him. “Information should be free.” Hotz told me, “This is the struggle of our generation, 
+                    the struggle between control of information and freedom of information.”</i></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="section13" class="slide">
+        <div class="content">
+            <h1>Situația 4</h1>
+            <div style="width:60%;">
+                <p>• spre deosebire de Apple, care a reacționat super ok într-o situație similară, în 2011 Geo primește o notificare prin care e anunțat că e dat în judecată de către Sony</p>
+                <p>• în ciuda a ce a scris el referitor la piraterie, el este dat în judecată fix din acest motiv, chiar dacă și-a dorit numai să folosească platforma la puterea sa reală.</p>
+                <p>• Sony dorește să confiște device-urile pe care le-a folosit Hotz la jailbreak-ul PS3-ului</p>
+                <p>• dorește să dea jos de pe internet orice informație cu privire la jailbreak</p>
+                <p>• on the other hand, The Electronic Frontier Foundation, o grupare ce susține drepturile digitale spune că acest caz, Sony v. Hotz, trimite un “mesaj periculos” cum că Sony 
+                    “are drepturi în computerele pe care ți le vinde chiar și după ce le-ai cumpărat, deci Sony poate decide dacă modul în care folosești tu computerul este legal sau nu. Noi nu suntem de acord. Odată ce ai cumpărat un calculator, este al tău”.</p>
+                <br>
+                <p><i>“Our motivation for bringing this litigation was to protect our intellectual property and our consumers.”</i></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="section14" class="slide">
+        <div class="content">
+            <h1>Quick Reminder</h1>
+
+            <div style="width:500px;">
+                <p>• Hotz are 21 de ani când trece prin toată nebunia asta</p>
+                <p>• and is fighting a multibillion corporation to give people full ownership on their devices</p>
+                <p>• but is fighting like a 21 year old</p>
+    
+                
+            </div>
+            <iframe width="544" height="307" src="https://www.youtube.com/embed/9iUvuaChDEg" title="The Light It Up Contest -- geohot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p><i>“But sh*t man,<br>
+                They’re a corporation<br>
+                And I’m a personification of freedom for all”<br>
+                </i></p>
+        </div>
+    </div>
+
+    
+    <div id="section15" class="slide">
+        <div class="content">
+            <h1>Hotz vs Sony</h1>
+            <div style="display:flex; justify-content: center; align-items: center; gap:50px;">
+                <img src="assets/geohot-raps.PNG" alt="geohot-raps" style="height:350px; height:260px; border-radius:2rem;"/>
+                <div style="width: 50%;">
+                    <p>• Piesa îi aduce simpatie pe internet, dar nu și în instanțe</p>
+                    <p>• Sony primește ordin de restricție împotriva lui Hotz prin care îl impiedică să hackuiască sau să disemineze informații de pe device-urile sale</p>
+                    <p>• se aprobă cererea lui Sony de a solicita informații de la Twitter, Google, Youtube, Bluehost (furnizorul de internet al lui George) despre utilizatorii care au descărcat instrucțiunile de pe site-ul său (inclusiv IP-uri)</p>
+                    <p>• intervine Anonymous which also finishes the job</p>
+                    <p>• Sony vs Hotz case ends with a settlement - nu mai folosește niciodată produsele Sony</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section16" class="slide">
+        <div class="content">
+            <h1>Life after hacking - comma.ai</h1>
+                 <div style="width: 50%;">
+                    <p>• Hotz dispare din scena publică la capitolul hacking, și apare pe cea a AI-ului</p>
+                    <p>• În 2015, Elon Musk îi oferă un job la Tesla, dar nu se înțeleg asupra tehnologiilor</p>
+                    <p>• Hotz înființează comma.ai ca să-i demonstreze lui Elon că viziunea lui asupra device-ului de self driving funcționează mult mai eficient și la costuri mici</p>
+                    <p>• În prezent device-ul costă 1250$ și poate fi integrat în peste 250 de modele de mașini ca piesă adițională</p>
+                </div>    
+                <img src="assets/openpilot.PNG" alt="openpilot" style="height:350px; height:260px; border-radius:2rem;"/>
+        </div>
+    </div>
+
+    <div id="section17" class="slide">
+        <div class="content">
+            <h1>And then Tinycorp</h1>
+            <div style="display:flex; justify-content: center; align-items: center; gap:50px;">
+                <img src="assets/nvidia-rules.PNG" alt="nvidia-rules" style="height:400px; height:300px; border-radius:2rem;"/>
+                <div style="width: 50%;">
+                    <p>• înființează compania în 2020 ca să susțină democratizarea AI-ului</p>
+                    <p>• e de părere că AI-ul va evolua atât de mult încât ar fi extrem de periculos ca un AI perfomant să se afle la mâna unui singur grup de oameni</p>
+                    <p>• crede că singura modalitate de a combate asta ar fi ca toată lumea să aibă AI-ul lui ca să existe o balanță</p>
+                    <p>• momentan niciun AI performant (OpenAI) nu are codul open source sub pretextul că ar fi prea periculos să fie așa</p>
+                    <p>• lucrează acum la o alternativă AMD pentru GPU-uri.</p>
+                    <p>• NVidia are monopol pe piață din cauză că a văzut o oportunitate într-un moment în care AMD nu a vazut, 
+                        fiind singura firmă de pe piață care poate produce plăci video care se folosesc în machine learning</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section18" class="slide">
+        <div class="content">
+            <h1>Concluzii</h1>
+            <div style="width: 50%;">
+                <p>• Deși nu a căutat explicit sau intenționat să se lupte pentru diverse principii, a aplicat mereu valorile unui hacker și nu a vrut niciodată sa facă rău prin ceea ce a făcut</p>
+                <p>• Deși părăsește lumea hacking-ului (în aparență) caută mereu să elimine monopolul/limitările și rămâne fidel acelorași principii</p>
+                <br>
+            </div> 
+            <iframe width="544" height="307" src="https://www.youtube.com/embed/UxxrhAhdPsc" title="tomcr00se (George Hotz) - i want to be in love when the endgame plays out | Poetry" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="section19" class="slide">
+        <div class="content">
+            <h1 style="width: 60%; text-align: center;">01010100 01101000 01100001 01101110 01101011 00100000 01111001 01101111 01110101 00100001</h1>
+            <p>(It's Thank you! in binary ❤️)</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<script>
+    document.addEventListener('keydown', function(e) {
+        if (e.keyCode == 65) {
+            document.getElementById('audio').play();
+        }
+    });
+
+    document.addEventListener("keydown", function (event) {
+        const currentSlide = document.querySelector(".current");
+        let nextSlide;
+
+        if (event.key === "ArrowRight") {
+            nextSlide = currentSlide.nextElementSibling;
+        } else if (event.key === "ArrowLeft") {
+            nextSlide = currentSlide.previousElementSibling;
+        }
+
+        if (nextSlide && nextSlide.classList.contains("slide")) {
+            currentSlide.classList.remove("current");
+            nextSlide.classList.add("current");
+        }
+    });
+
+    const images = document.querySelectorAll('.animate');
+    let currentImageIndex = 0;
+
+    function showImage(index, isNext) {
+    const previousImage = images[currentImageIndex];
+    const nextImage = images[index];
+
+    // Add the 'active' class to the next image
+    nextImage.classList.add('active');
+
+    // Define the animation directions based on the key press
+    const nextDirection = isNext ? '150%' : '-150%';
+    const prevDirection = isNext ? '-150%' : '150%';
+
+    // Animate the current image to the left (or right) and fade out
+    gsap.to(previousImage, { x: prevDirection, opacity: 0, duration: 0.5, onComplete: () => {
+        previousImage.style.transform = ''; // Reset transform after animation
+        previousImage.classList.remove('active');
+    }});
+
+    // Animate the next image to slide in from the right (or left) and fade in
+    gsap.fromTo(nextImage, { x: nextDirection, opacity: 0 }, { x: '0', opacity: 1, duration: 0.5 });
+
+    currentImageIndex = index;
+    }
+
+    document.addEventListener('keydown', (event) => {
+    if (event.key === 'd') {
+        const nextIndex = (currentImageIndex + 1) % images.length;
+        if (nextIndex !== 0) { // Prevent advancing past the last image
+        showImage(nextIndex, true); // Pass true for next animation
+        }
+    } else if (event.key === 'a') {
+        const prevIndex = (currentImageIndex - 1 + images.length) % images.length;
+        if (currentImageIndex !== 0) { // Prevent going before the first image
+        showImage(prevIndex, false); // Pass false for previous animation
+        }
+    }
+    });
+
+    // Show the initial image
+    images[currentImageIndex].classList.add('active');
+
+</script>
